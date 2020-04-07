@@ -10,9 +10,9 @@ fi
 if [[ "$APP_HOMEPAGE" != "" ]]; then
   if [[ `uname` = 'Darwin' ]]; then
     # Mac 系统
-    sed -i'' -e 's@"homepage": "."@"homepage": "'$APP_HOMEPAGE'"@' package.json package.json
+    sed -i'' -e 's@"homepage": "."@"homepage": "'$APP_HOMEPAGE'"@' package.json
   else
-    sed -i 's@"homepage": "."@"homepage": "'$APP_HOMEPAGE'"@' package.json package.json
+    sed -i 's@"homepage": "."@"homepage": "'$APP_HOMEPAGE'"@' package.json
   fi
 fi
 

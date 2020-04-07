@@ -24,7 +24,7 @@ if [[ "$router_type" != "" ]]; then
     # Mac 系统
     sed -i'' -e 's@# try_files $uri /index.html;@try_files $uri /index.html;@' default.conf
   else
-    sed -i 's@# try_files $uri /index.html;@try_files $uri /index.html;@' default.conf default.conf
+    sed -i 's@# try_files $uri /index.html;@try_files $uri /index.html;@' default.conf
   fi
 fi
 
