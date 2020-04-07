@@ -13,6 +13,8 @@ const Head = () => (
   <Row bg="white">
     <LinkItem to="/" title="Home" />
     <LinkItem to="/json-transform" title="JSON数据转化" />
+    <LinkItem to="/json2csv" title="JSON转CSV" />
+    <LinkItem to="/csv2json" title="CSV转JSON" />
   </Row>
 )
 

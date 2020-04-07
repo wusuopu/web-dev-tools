@@ -5,8 +5,6 @@ import { Box, Row, Col } from '../base/view'
 
 const TextArea = Input.TextArea
 
-
-
 export default class JsonTransform extends React.PureComponent {
   state = {
     source: '',

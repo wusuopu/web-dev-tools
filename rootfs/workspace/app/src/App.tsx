@@ -14,6 +14,8 @@ import theme from './theme'
 import asyncComponent from './containers/enhancers/async-component'
 const HomePage = asyncComponent(() => import('./containers/home-page'));
 const JsonTransformPage = asyncComponent(() => import('./containers/json-transform-page'));
+const Csv2JsonPage = asyncComponent(() => import('./containers/json-csv/csv2json-page'));
+const Json2CsvPage = asyncComponent(() => import('./containers/json-csv/json2csv-page'));
 
 
 // 前端路由类型，默认使用 Hash 的方式
@@ -57,6 +59,8 @@ const App: React.FC = () => {
               <Switch>
                 <Route exact path='/' component={HomePage} />
                 <Route exact path='/json-transform' component={JsonTransformPage} />
+                <Route exact path='/json2csv' component={Json2CsvPage} />
+                <Route exact path='/csv2json' component={Csv2JsonPage} />
                 <Route component={NotFoundPage} />
               </Switch>
             </Router>
