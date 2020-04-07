@@ -25,7 +25,7 @@ export default class JsonTransform extends React.PureComponent {
     ]
     let prompt = this.state.simpleMode ? simplePromt : advancePromt
     return (
-      <Row>
+      <Row flexWrap="wrap">
         <Col width={[1, 1, 1/2, 1/2]} p={1} borderWidth={1}>
           <Box>
             请输入数据：
@@ -60,7 +60,7 @@ export default class JsonTransform extends React.PureComponent {
   handleClick = () => {
     let data
     try {
-      data = Function('"use strict";return (' + this.state.source + ')')()
+      data = Function('"use strict";return (' + this.state.source + ')')()      // eslint-disable-line
       // data = eval(this.state.source)
     } catch (err) {
       console.error(err, this.state.source)
@@ -72,10 +72,10 @@ export default class JsonTransform extends React.PureComponent {
       let r
       if (this.state.simpleMode) {
         r = _.map(data, (item, index) => {
-          return eval(this.state.code)
+          return eval(this.state.code)    // eslint-disable-line
         })
       } else {
-        r = eval(this.state.code)
+        r = eval(this.state.code)         // eslint-disable-line
       }
         let result = JSON.stringify(r, undefined, 2)
         this.setState({error: '', result})

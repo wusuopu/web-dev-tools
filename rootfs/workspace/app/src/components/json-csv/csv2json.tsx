@@ -1,5 +1,4 @@
 import React from 'react'
-import _ from 'lodash'
 import csv2json from 'csvjson-csv2json'
 import BaseForm from './form'
 

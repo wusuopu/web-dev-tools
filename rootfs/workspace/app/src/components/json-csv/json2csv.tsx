@@ -1,5 +1,4 @@
 import React from 'react'
-import _ from 'lodash'
 import json2csv from 'csvjson-json2csv'
 import BaseForm from './form'
 
@@ -17,7 +16,7 @@ export default class Json2Csv extends React.PureComponent {
   handleClick = (source:string, separator:string):string => {
     let data
     try {
-      data = Function('"use strict";return (' + source + ')')()
+      data = Function('"use strict";return (' + source + ')')()   // eslint-disable-line
     } catch (err) {
       console.error(err, source)
       this.setState({error: '输入的不是JSON数据'})

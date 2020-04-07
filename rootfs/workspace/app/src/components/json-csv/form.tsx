@@ -1,6 +1,5 @@
 import React from 'react'
 import { Input, Button, Select } from 'antd'
-import _ from 'lodash'
 import { Box, Row, Col } from '../base/view'
 
 const TextArea = Input.TextArea
@@ -20,7 +19,7 @@ export default class BaseForm extends React.PureComponent<Props> {
   render() {
     return (
       <React.Fragment>
-        <Row>
+        <Row flexWrap="wrap">
           <Col width={[1, 1, 1/2, 1/2]} p={1} borderWidth={1}>
             <Box>源数据：</Box>
             <TextArea rows={16} value={this.state.source} onChange={this.handleSourceChange} />
