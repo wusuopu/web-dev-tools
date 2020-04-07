@@ -4921,6 +4921,16 @@ csstype@^2.2.0, csstype@^2.5.7, csstype@^2.6.6, csstype@^2.6.9:
   resolved "https://registry.npm.taobao.org/csstype/download/csstype-2.6.9.tgz?cache=0&other_urls=https%3A%2F%2Fregistry.npm.taobao.org%2Fcsstype%2Fdownload%2Fcsstype-2.6.9.tgz#05141d0cd557a56b8891394c1911c40c8a98d098"
   integrity sha1-BRQdDNVXpWuIkTlMGRHEDIqY0Jg=
 
+csvjson-csv2json@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.npm.taobao.org/csvjson-csv2json/download/csvjson-csv2json-5.0.6.tgz#b056f77dd3c13a2f550ada1c31f05072aad6ff3a"
+  integrity sha1-sFb3fdPBOi9VCtocMfBQcqrW/zo=
+
+csvjson-json2csv@^1.0.3:
+  version "1.0.3"
+  resolved "https://registry.npm.taobao.org/csvjson-json2csv/download/csvjson-json2csv-1.0.3.tgz#5643589427a3f78bcc73dfff450493780087705c"
+  integrity sha1-VkNYlCej94vMc9//RQSTeACHcFw=
+
 cyclist@^1.0.1:
   version "1.0.1"
   resolved "https://registry.npm.taobao.org/cyclist/download/cyclist-1.0.1.tgz#596e9698fd0c80e12038c2b82d6eb1b35b6224d9"

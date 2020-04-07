@@ -13,6 +13,7 @@ import theme from './theme'
 
 import asyncComponent from './containers/enhancers/async-component'
 const HomePage = asyncComponent(() => import('./containers/home-page'));
+const JsonTransformPage = asyncComponent(() => import('./containers/json-transform-page'));
 
 
 // 前端路由类型，默认使用 Hash 的方式
@@ -55,6 +56,7 @@ const App: React.FC = () => {
             >
               <Switch>
                 <Route exact path='/' component={HomePage} />
+                <Route exact path='/json-transform' component={JsonTransformPage} />
                 <Route component={NotFoundPage} />
               </Switch>
             </Router>
