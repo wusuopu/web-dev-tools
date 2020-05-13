@@ -1,6 +1,7 @@
 import React from 'react'
 import { Input, Button, Select } from 'antd'
 import { Box, Row, Col } from '../base/view'
+import FileInput from '../base/file-input'
 
 const TextArea = Input.TextArea
 
@@ -22,7 +23,11 @@ export default class BaseForm extends React.PureComponent<Props> {
         <Row flexWrap="wrap">
           <Col width={[1, 1, 1/2, 1/2]} p={1} borderWidth={1}>
             <Box>源数据：</Box>
-            <TextArea rows={16} value={this.state.source} onChange={this.handleSourceChange} />
+            <FileInput
+              rows={16}
+              value={this.state.source}
+              onChange={this.handleSourceChange}
+            />
           </Col>
           <Col width={[1, 1, 1/2, 1/2]} p={1} borderWidth={1}>
             <Box>结果：</Box>
@@ -45,10 +50,10 @@ export default class BaseForm extends React.PureComponent<Props> {
     )
   }
 
-  handleSourceChange = (ev) => {
-    this.setState({source: ev.target.value})
+  handleSourceChange = (source: string) => {
+    this.setState({source})
   }
-  handleSeparatorChange = (separator) => {
+  handleSeparatorChange = (separator: string) => {
     this.setState({separator})
   }
   handleClick = () => {

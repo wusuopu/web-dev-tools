@@ -15,6 +15,7 @@ const Head = () => (
     <LinkItem to="/json-transform" title="JSON数据转化" />
     <LinkItem to="/json2csv" title="JSON转CSV" />
     <LinkItem to="/csv2json" title="CSV转JSON" />
+    <LinkItem to="/jsonapi-serializer" title="JSONApi序列化" />
   </Row>
 )
 

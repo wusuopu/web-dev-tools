@@ -16,6 +16,7 @@
     "csvjson-csv2json": "^5.0.6",
     "csvjson-json2csv": "^1.0.3",
     "faker": "^4.1.0",
+    "jsonapi-serializer": "^3.6.6",
     "mockjs": "^1.1.0",
     "react": "^16.13.0",
     "react-dom": "^16.13.0",

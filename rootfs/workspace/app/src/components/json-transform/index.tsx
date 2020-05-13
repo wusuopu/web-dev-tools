@@ -2,6 +2,7 @@ import React from 'react'
 import { Input, Button, Checkbox } from 'antd'
 import _ from 'lodash'
 import { Box, Row, Col } from '../base/view'
+import FileInput from '../base/file-input'
 
 const TextArea = Input.TextArea
 
@@ -31,7 +32,11 @@ export default class JsonTransform extends React.PureComponent {
             请输入数据：
             <Checkbox checked={this.state.simpleMode} onChange={() => { this.setState({simpleMode: !this.state.simpleMode}) }}>简单模式</Checkbox>
           </Box>
-          <TextArea rows={23} value={this.state.source} onChange={this.handleSourceChange} />
+          <FileInput
+            rows={23}
+            value={this.state.source}
+            onChange={this.handleSourceChange}
+          />
         </Col>
         <Col width={[1, 1, 1/2, 1/2]} p={1} borderWidth={1}>
           <Col mb={1}>
@@ -50,8 +55,8 @@ export default class JsonTransform extends React.PureComponent {
     )
   }
 
-  handleSourceChange = (ev) => {
-    this.setState({source: ev.target.value})
+  handleSourceChange = (source: string) => {
+    this.setState({source})
   }
   handleCodeChange = (ev) => {
     this.setState({code: ev.target.value})

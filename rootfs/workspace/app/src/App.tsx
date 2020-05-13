@@ -16,6 +16,7 @@ const HomePage = asyncComponent(() => import('./containers/home-page'));
 const JsonTransformPage = asyncComponent(() => import('./containers/json-transform-page'));
 const Csv2JsonPage = asyncComponent(() => import('./containers/json-csv/csv2json-page'));
 const Json2CsvPage = asyncComponent(() => import('./containers/json-csv/json2csv-page'));
+const JsonApiSerializerPage = asyncComponent(() => import('./containers/json-api-serializer-page'));
 
 
 // 前端路由类型，默认使用 Hash 的方式
@@ -61,6 +62,7 @@ const App: React.FC = () => {
                 <Route exact path='/json-transform' component={JsonTransformPage} />
                 <Route exact path='/json2csv' component={Json2CsvPage} />
                 <Route exact path='/csv2json' component={Csv2JsonPage} />
+                <Route exact path='/jsonapi-serializer' component={JsonApiSerializerPage} />
                 <Route component={NotFoundPage} />
               </Switch>
             </Router>
