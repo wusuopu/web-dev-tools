@@ -17,6 +17,8 @@ const JsonTransformPage = asyncComponent(() => import('./containers/json-transfo
 const Csv2JsonPage = asyncComponent(() => import('./containers/json-csv/csv2json-page'));
 const Json2CsvPage = asyncComponent(() => import('./containers/json-csv/json2csv-page'));
 const JsonApiSerializerPage = asyncComponent(() => import('./containers/json-api-serializer-page'));
+const ExcelPage = asyncComponent(() => import('./containers/excel'));
+const GeoLocationPage = asyncComponent(() => import('./containers/geo-location'));
 
 
 // 前端路由类型，默认使用 Hash 的方式
@@ -63,6 +65,8 @@ const App: React.FC = () => {
                 <Route exact path='/json2csv' component={Json2CsvPage} />
                 <Route exact path='/csv2json' component={Csv2JsonPage} />
                 <Route exact path='/jsonapi-serializer' component={JsonApiSerializerPage} />
+                <Route exact path='/excel' component={ExcelPage} />
+                <Route exact path='/geo-location' component={GeoLocationPage} />
                 <Route component={NotFoundPage} />
               </Switch>
             </Router>
