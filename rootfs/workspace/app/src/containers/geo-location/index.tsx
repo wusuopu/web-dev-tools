@@ -44,7 +44,7 @@ const PositionInfo: React.FC<{data: IPosition|null}> = ({ data }) => {
       </Box>
       <Row>
         <Box><Button onClick={handleCopy}>复制位置</Button></Box>
-        <Box><a href="http://api.map.baidu.com/lbsapi/getpoint/index.html" target="_blank">拾取坐标</a></Box>
+        <Box><a href="http://api.map.baidu.com/lbsapi/getpoint/index.html" target="_blank" rel="noopener noreferrer">拾取坐标</a></Box>
       </Row>
     </Col>
   )
