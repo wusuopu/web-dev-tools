@@ -29,9 +29,11 @@ const ExcelPage: React.FC = () => {
     }
     const data = await file.read(fileList[0], 'buffer')
     const workbook = new Excel.Workbook();
-    await workbook.xlsx.load(data as ArrayBuffer)
-    debugger
+    await workbook.xlsx.load(data as ArrayBuffer);
+    debugger;
+    (window as any).workbook = workbook
     console.log('start debug')
+    throw new Error('debug')
   }
 
   return (

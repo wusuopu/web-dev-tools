@@ -10,7 +10,7 @@ const LinkItem = (props: {to: string, title: string}) => (
 )
 
 const Head = () => (
-  <Row bg="white">
+  <Row bg="white" flexWrap="wrap">
     <LinkItem to="/" title="Home" />
     <LinkItem to="/json-transform" title="JSON数据转化" />
     <LinkItem to="/json2csv" title="JSON转CSV" />
